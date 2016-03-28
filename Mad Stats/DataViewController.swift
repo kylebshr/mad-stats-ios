@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DataViewController: UIViewController {
+class DataViewController: UITableViewController {
 
     var game: Game!
 
