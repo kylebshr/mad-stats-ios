@@ -1,0 +1,6 @@
+framework module ElegantPresentations {
+  umbrella header "ElegantPresentations-umbrella.h"
+
+  export *
+  module * { export * }
+}

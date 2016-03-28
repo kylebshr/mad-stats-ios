@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="b3i-gv-x0e">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Jd3-Oy-ntO">
+            <objects>
+                <navigationController id="b3i-gv-x0e" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="bvW-ME-2cn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CWm-FV-hg5" kind="relationship" relationship="rootViewController" id="slg-ob-9aO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="89O-Sy-Es3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-56" y="500"/>
+        </scene>
+        <!--Statistics-->
+        <scene sceneID="cmE-ix-bbk">
+            <objects>
+                <viewController storyboardIdentifier="DataViewController" id="CWm-FV-hg5" customClass="DataViewController" customModule="Mad_Stats" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zED-pP-7yK"/>
+                        <viewControllerLayoutGuide type="bottom" id="RWH-XI-tvI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dM6-2R-GiR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Statistics" id="ONz-Yh-t2c">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="7no-kM-0Yw">
+                            <connections>
+                                <segue destination="OjM-3y-hLF" kind="unwind" unwindAction="unwindToGames:" id="GEW-yu-LQx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hIe-4S-5CH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="OjM-3y-hLF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="500"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+</document>

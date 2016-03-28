@@ -1,0 +1,6 @@
+framework module Pods_Mad_StatsUITests {
+  umbrella header "Pods-Mad StatsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
