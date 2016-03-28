@@ -36,9 +36,13 @@ class GameTableViewController: UITableViewController {
         let dataNavigationController = R.storyboard.card.initialViewController()!
         let dataViewController = dataNavigationController.viewControllers.first as! DataViewController
 
-        // Set the custom presentation properties
-        dataNavigationController.modalPresentationStyle = .Custom
-        dataNavigationController.transitioningDelegate = self
+        // On iPad, use a form sheet style. On iPhones, use ElegantPresentations.
+        if traitCollection.horizontalSizeClass == .Regular && traitCollection.verticalSizeClass == .Regular {
+            dataNavigationController.modalPresentationStyle = .FormSheet
+        } else {
+            dataNavigationController.modalPresentationStyle = .Custom
+            dataNavigationController.transitioningDelegate = self
+        }
 
         // Set the game which we're showing data for
         dataViewController.game = games[indexPath.row]
