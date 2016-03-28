@@ -149,21 +149,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Games" id="Rj9-jN-AOV"/>
-                    <connections>
-                        <segue destination="h9X-9X-F7J" kind="presentation" identifier="PresentData" modalPresentationStyle="formSheet" id="Nud-J5-b1j"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PBd-k1-uJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="823" y="427"/>
-        </scene>
-        <!--Card-->
-        <scene sceneID="Yf0-gw-jtD">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Card" id="h9X-9X-F7J" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="djO-Y5-mKU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1344.5" y="427"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="91F-WH-QIL">
