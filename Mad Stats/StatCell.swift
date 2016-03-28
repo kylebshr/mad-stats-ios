@@ -14,4 +14,10 @@ class StatCell: UITableViewCell {
     @IBOutlet var firstTeamLabel: UILabel!
     @IBOutlet var secondTeamLabel: UILabel!
 
+    // Helper function to set up all the labels based on a game
+    func setUpWithStatistic(stat: Statistic) {
+        titleLabel.text = stat.title
+        firstTeamLabel.text = stat.firstTeam
+        secondTeamLabel.text = stat.secondTeam
+    }
 }

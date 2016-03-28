@@ -32,7 +32,7 @@ class DataViewController: UITableViewController {
 
         let cell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.statCell)!
 
-        
+        cell.setUpWithStatistic(DataGenerator.statisticForIndex(indexPath.row, game: game))
 
         return cell
     }
