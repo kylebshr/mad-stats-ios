@@ -10,8 +10,6 @@ import UIKit
 
 class DataViewController: UIViewController {
 
-    @IBOutlet weak var segmentControl: UISegmentedControl!
-
     var game: Game!
 
     override func viewDidLoad() {

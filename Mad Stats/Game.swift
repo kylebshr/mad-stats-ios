@@ -8,6 +8,7 @@
 
 import Foundation
 
+// A game holds the two teams playing and a date for the game
 struct Game {
 
     let firstTeam: Team
@@ -16,6 +17,7 @@ struct Game {
 
 }
 
+// Convenience protocol to get strings for displaying
 extension Game: GameDisplayable {
 
     var firstTeamName: String {

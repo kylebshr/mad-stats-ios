@@ -8,8 +8,11 @@
 
 import Foundation
 
+// Convenience protocol to get strings for displaying
 protocol GameDisplayable {
+
     var firstTeamName: String { get }
     var secondTeamName: String { get }
     var dateString: String { get }
+    
 }

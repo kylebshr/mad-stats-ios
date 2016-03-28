@@ -21,9 +21,7 @@
 		27F3E8AD1CA9797500F95B8D /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8AC1CA9797500F95B8D /* GameCell.swift */; };
 		27F3E8AF1CA97AE500F95B8D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8AE1CA97AE500F95B8D /* Game.swift */; };
 		27F3E8B11CA97AF600F95B8D /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8B01CA97AF600F95B8D /* Team.swift */; };
-		27F3E8B31CA97B2800F95B8D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8B21CA97B2800F95B8D /* Player.swift */; };
 		27F3E8B51CA97BDC00F95B8D /* GameDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8B41CA97BDC00F95B8D /* GameDisplayable.swift */; };
-		27F3E8B71CA97E5400F95B8D /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8B61CA97E5400F95B8D /* UITableViewCell+Extensions.swift */; };
 		27F3E8B91CA97F2C00F95B8D /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8B81CA97F2C00F95B8D /* DataGenerator.swift */; };
 		27F3E8BB1CA9933300F95B8D /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8BA1CA9933300F95B8D /* NSDate+Extensions.swift */; };
 		DD5A8461557ADB94F0C02C2B /* Pods_Mad_Stats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476C195B5A9C80D14C09DD28 /* Pods_Mad_Stats.framework */; };
@@ -72,9 +70,7 @@
 		27F3E8AC1CA9797500F95B8D /* GameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
 		27F3E8AE1CA97AE500F95B8D /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		27F3E8B01CA97AF600F95B8D /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
-		27F3E8B21CA97B2800F95B8D /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		27F3E8B41CA97BDC00F95B8D /* GameDisplayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDisplayable.swift; sourceTree = "<group>"; };
-		27F3E8B61CA97E5400F95B8D /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		27F3E8B81CA97F2C00F95B8D /* DataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
 		27F3E8BA1CA9933300F95B8D /* NSDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extensions.swift"; sourceTree = "<group>"; };
 		28BAA942B2A193AE635B4DAE /* Pods-Mad StatsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mad StatsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mad StatsUITests/Pods-Mad StatsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,7 +151,6 @@
 			children = (
 				27F3E8AE1CA97AE500F95B8D /* Game.swift */,
 				27F3E8B01CA97AF600F95B8D /* Team.swift */,
-				27F3E8B21CA97B2800F95B8D /* Player.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -172,7 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				27F3E8AA1CA9752000F95B8D /* UIColor+Extensions.swift */,
-				27F3E8B61CA97E5400F95B8D /* UITableViewCell+Extensions.swift */,
 				27F3E8BA1CA9933300F95B8D /* NSDate+Extensions.swift */,
 				27F3E8B81CA97F2C00F95B8D /* DataGenerator.swift */,
 			);
@@ -543,10 +537,8 @@
 				27F3E87D1CA974BB00F95B8D /* AppDelegate.swift in Sources */,
 				27179DC71CA9C88500ADC022 /* R.generated.swift in Sources */,
 				27F3E8B51CA97BDC00F95B8D /* GameDisplayable.swift in Sources */,
-				27F3E8B31CA97B2800F95B8D /* Player.swift in Sources */,
 				27F3E8AD1CA9797500F95B8D /* GameCell.swift in Sources */,
 				27F3E8AF1CA97AE500F95B8D /* Game.swift in Sources */,
-				27F3E8B71CA97E5400F95B8D /* UITableViewCell+Extensions.swift in Sources */,
 				27F3E8B91CA97F2C00F95B8D /* DataGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

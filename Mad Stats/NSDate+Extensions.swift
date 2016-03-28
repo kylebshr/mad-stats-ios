@@ -10,6 +10,7 @@ import Foundation
 
 extension NSDate {
 
+    // Convience method for adding dates to games
     static func dateFromString(string: String) -> NSDate {
         let formatter = NSDateFormatter()
         formatter.dateFormat = "M/dd"

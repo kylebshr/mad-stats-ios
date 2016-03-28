@@ -8,30 +8,39 @@
 
 import Foundation
 
+// Helper struct since we're not loading data from anywhere
 struct DataGenerator {
 
-    // This is kind of awful, but oh well. A real app would obviously load this from a server
+    /* 
+ 
+     This is kind of awful/annoying, but oh well.
+     A real app would obviously load this from a server.
+ 
+     As the requirements said, this only includes four games, 
+     and statistics/data for the eight teams in those games
+
+    */
     static var games: [Game] {
 
         var games = [Game]()
 
-        let iowa = Team(name: "Iowa State", players: [])
-        let iona = Team(name: "Iona", players: [])
+        let iowa = Team(name: "Iowa State")
+        let iona = Team(name: "Iona")
 
         games.append(Game(firstTeam: iowa, secondTeam: iona, date: NSDate.dateFromString("3/17")))
 
-        let baylor = Team(name: "Baylor", players: [])
-        let yale = Team(name: "Yale", players: [])
+        let baylor = Team(name: "Baylor")
+        let yale = Team(name: "Yale")
 
         games.append(Game(firstTeam: baylor, secondTeam: yale, date: NSDate.dateFromString("3/17")))
 
-        let indiana = Team(name: "Indiana", players: [])
-        let chattanooga = Team(name: "Chattanooga", players: [])
+        let indiana = Team(name: "Indiana")
+        let chattanooga = Team(name: "Chattanooga")
 
         games.append(Game(firstTeam: indiana, secondTeam: chattanooga, date: NSDate.dateFromString("3/17")))
 
-        let gonzaga = Team(name: "Gonzaga", players: [])
-        let seton = Team(name: "Seton Hall", players: [])
+        let gonzaga = Team(name: "Gonzaga")
+        let seton = Team(name: "Seton Hall")
 
         games.append(Game(firstTeam: gonzaga, secondTeam: seton, date: NSDate.dateFromString("3/17")))
 

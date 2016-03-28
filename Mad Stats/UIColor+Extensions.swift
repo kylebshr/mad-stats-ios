@@ -10,7 +10,10 @@ import UIKit
 
 extension UIColor {
 
-    // Based on https://gist.github.com/arshad/de147c42d7b3063ef7bc
+    /*
+     Based on https://gist.github.com/arshad/de147c42d7b3063ef7bc
+     Simply initialize a color from a hex string, with or without leading #
+    */
     convenience init(hex: String) {
 
         var colorString = hex.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).uppercaseString
