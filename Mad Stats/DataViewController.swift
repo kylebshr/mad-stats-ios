@@ -20,5 +20,20 @@ class DataViewController: UITableViewController {
 
     func setUpUI() {
 
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 65
+    }
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return DataGenerator.statCount
+    }
+
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
+        let cell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.statCell)!
+
+        
+
+        return cell
     }
 }

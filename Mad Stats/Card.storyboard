@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StatCell" rowHeight="50" id="4i5-N5-Wks">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StatCell" rowHeight="50" id="4i5-N5-Wks" customClass="StatCell" customModule="Mad_Stats" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4i5-N5-Wks" id="pq0-ex-Lns">
@@ -82,6 +82,11 @@
                                         <constraint firstItem="6u0-zP-8sf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pq0-ex-Lns" secondAttribute="topMargin" id="zsT-pp-4yc"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="firstTeamLabel" destination="6u0-zP-8sf" id="847-D2-y8Z"/>
+                                    <outlet property="secondTeamLabel" destination="Z8a-qz-hnB" id="0gz-JK-vUp"/>
+                                    <outlet property="titleLabel" destination="lRi-Nm-tly" id="Zc1-rz-AUB"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

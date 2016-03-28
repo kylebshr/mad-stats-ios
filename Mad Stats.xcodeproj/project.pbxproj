@@ -10,6 +10,8 @@
 		27179DC71CA9C88500ADC022 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27179DC61CA9C88500ADC022 /* R.generated.swift */; };
 		27DF81341CA9BBE400E043D4 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DF81331CA9BBE400E043D4 /* Card.storyboard */; };
 		27DF81361CA9BF0C00E043D4 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF81351CA9BF0C00E043D4 /* DataViewController.swift */; };
+		27EB34951CA9F39B00F51B35 /* StatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB34941CA9F39B00F51B35 /* StatCell.swift */; };
+		27EB34971CA9F43700F51B35 /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB34961CA9F43700F51B35 /* Statistic.swift */; };
 		27F3E87D1CA974BB00F95B8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E87C1CA974BB00F95B8D /* AppDelegate.swift */; };
 		27F3E87F1CA974BB00F95B8D /* GameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E87E1CA974BB00F95B8D /* GameTableViewController.swift */; };
 		27F3E8821CA974BB00F95B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F3E8801CA974BB00F95B8D /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 		27179DC61CA9C88500ADC022 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		27DF81331CA9BBE400E043D4 /* Card.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
 		27DF81351CA9BF0C00E043D4 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		27EB34941CA9F39B00F51B35 /* StatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatCell.swift; sourceTree = "<group>"; };
+		27EB34961CA9F43700F51B35 /* Statistic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
 		27F3E8791CA974BB00F95B8D /* Mad Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mad Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F3E87C1CA974BB00F95B8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27F3E87E1CA974BB00F95B8D /* GameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				27F3E8AC1CA9797500F95B8D /* GameCell.swift */,
+				27EB34941CA9F39B00F51B35 /* StatCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			children = (
 				27F3E8AE1CA97AE500F95B8D /* Game.swift */,
 				27F3E8B01CA97AF600F95B8D /* Team.swift */,
+				27EB34961CA9F43700F51B35 /* Statistic.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -538,8 +544,10 @@
 				27179DC71CA9C88500ADC022 /* R.generated.swift in Sources */,
 				27F3E8B51CA97BDC00F95B8D /* GameDisplayable.swift in Sources */,
 				27F3E8AD1CA9797500F95B8D /* GameCell.swift in Sources */,
+				27EB34951CA9F39B00F51B35 /* StatCell.swift in Sources */,
 				27F3E8AF1CA97AE500F95B8D /* Game.swift in Sources */,
 				27F3E8B91CA97F2C00F95B8D /* DataGenerator.swift in Sources */,
+				27EB34971CA9F43700F51B35 /* Statistic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
