@@ -31,8 +31,10 @@ class DataViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.statCell)!
+        let stat = DataGenerator.statisticForIndex(indexPath.row, game: game)
 
-        cell.setUpWithStatistic(DataGenerator.statisticForIndex(indexPath.row, game: game))
+        cell.setUpWithStatistic(stat, forGame: game)
+        cell.contentView.backgroundColor = indexPath.row % 2 == 0 ? .whiteColor() : .groupTableViewBackgroundColor()
 
         return cell
     }

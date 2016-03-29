@@ -55,6 +55,64 @@ struct DataGenerator {
         "Possession Time"
     ]
 
+    private static let keyPlayers = [
+        "Iowa State": "",
+        "Iona": "",
+        "Baylor": "",
+        "Yale": "",
+        "Indiana": "",
+        "Chattanooga": "",
+        "Gonzaga": "",
+        "Seton Hall": "",
+    ]
+
+    private static let points = [
+        "Iowa State": "",
+        "Iona": "",
+        "Baylor": "",
+        "Yale": "",
+        "Indiana": "",
+        "Chattanooga": "",
+        "Gonzaga": "",
+        "Seton Hall": "",
+    ]
+
+    private static let fouls = [
+        "Iowa State": "",
+        "Iona": "",
+        "Baylor": "",
+        "Yale": "",
+        "Indiana": "",
+        "Chattanooga": "",
+        "Gonzaga": "",
+        "Seton Hall": "",
+    ]
+
+    private static let possessions = [
+        "Iowa State": "",
+        "Iona": "",
+        "Baylor": "",
+        "Yale": "",
+        "Indiana": "",
+        "Chattanooga": "",
+        "Gonzaga": "",
+        "Seton Hall": "",
+    ]
+
+    private static var names: [String: String] {
+
+        var teams = [String: String]()
+
+        games.forEach {
+            teams[$0.firstTeamName] = $0.firstTeamName
+            teams[$0.secondTeamName] = $0.secondTeamName
+        }
+
+        return teams
+    }
+
+    private static let stats = [names, keyPlayers, points, fouls, possessions]
+
     static var statCount: Int {
         return statTitles.count
     }
@@ -63,6 +121,9 @@ struct DataGenerator {
 
         let title = statTitles[index]
 
-        return Statistic(title: title, firstTeam: "One million", secondTeam: "Two million")
+        let firstStat = stats[index][game.firstTeamName]!
+        let secondStat = stats[index][game.secondTeamName]!
+
+        return Statistic(title: title, firstTeam: firstStat, secondTeam: secondStat)
     }
 }

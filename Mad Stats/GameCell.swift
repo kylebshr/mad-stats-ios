@@ -18,7 +18,7 @@ class GameCell: UITableViewCell {
         super.awakeFromNib()
 
         // Annoying, but iPad doesn't respect this being set in IB
-        backgroundColor = UIColor.clearColor()
+        backgroundColor = .clearColor()
     }
 
     // Override this for custom selection color
