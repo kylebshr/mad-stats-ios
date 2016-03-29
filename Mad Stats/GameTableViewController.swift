@@ -112,8 +112,14 @@ extension GameTableViewController: UIViewControllerPreviewingDelegate {
             return nil
         }
 
+        // Get the rect for the cell being pressed
+        let cellRect = tableView.rectForRowAtIndexPath(indexPath)
+
+        // Remove the cell separators from the previewing rect
+        let previewRect = CGRect(x: cellRect.origin.x, y: cellRect.origin.y + 1, width: cellRect.width, height: cellRect.height - 2)
+
         // Set the source rect to the cell
-        previewingContext.sourceRect = tableView.rectForRowAtIndexPath(indexPath)
+        previewingContext.sourceRect = previewRect
 
         // Return a VC configured for that indexPath
         return viewControllerForIndexPath(indexPath)
