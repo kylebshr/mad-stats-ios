@@ -33,21 +33,29 @@ class GameTableViewController: UITableViewController {
     func viewControllerForIndexPath(indexPath: NSIndexPath) -> UIViewController {
 
         // Initialize from R.swift, safe to force unwrap — we want to crash if there's no VC there
-        let dataNavigationController = R.storyboard.card.initialViewController()!
-        let dataViewController = dataNavigationController.viewControllers.first as! DataViewController
-
-        // On iPad, use a form sheet style. On iPhones, use ElegantPresentations.
-        if traitCollection.horizontalSizeClass == .Regular && traitCollection.verticalSizeClass == .Regular {
-            dataNavigationController.modalPresentationStyle = .FormSheet
-        } else {
-            dataNavigationController.modalPresentationStyle = .Custom
-            dataNavigationController.transitioningDelegate = self
-        }
+        let dataViewController = R.storyboard.card.dataViewController()!
 
         // Set the game which we're showing data for
         dataViewController.game = games[indexPath.row]
 
-        return dataNavigationController
+        return dataViewController
+    }
+
+    func embedAndPresentViewController(viewController: UIViewController) {
+
+        // Embed the view controller into a navigation controller
+        let navigationController = UINavigationController(rootViewController: viewController)
+
+        // On iPad, use a form sheet style. On iPhones, use ElegantPresentations.
+        if traitCollection.horizontalSizeClass == .Regular && traitCollection.verticalSizeClass == .Regular {
+            navigationController.modalPresentationStyle = .FormSheet
+        } else {
+            navigationController.modalPresentationStyle = .Custom
+            navigationController.transitioningDelegate = self
+        }
+
+        // Present the navigation controller
+        self.presentViewController(navigationController, animated: true, completion: nil)
     }
 
     @IBAction func unwindToGames(segue: UIStoryboardSegue) {
@@ -79,11 +87,9 @@ class GameTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
-        // There seems to be a bug where this isn't called on the main thread and sometimes lags
-        dispatch_async(dispatch_get_main_queue()) {
-
-            // Present a DataViewController created for the index path
-            self.presentViewController(self.viewControllerForIndexPath(indexPath), animated: true, completion: nil)
+        // There seems to be a bug where this isn't called on the main thread or something. This fixes it.
+        dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+            self.embedAndPresentViewController(self.viewControllerForIndexPath(indexPath))
         }
     }
 }
@@ -115,6 +121,6 @@ extension GameTableViewController: UIViewControllerPreviewingDelegate {
     }
 
     func previewingContext(previewingContext: UIViewControllerPreviewing, commitViewController viewControllerToCommit: UIViewController) {
-        presentViewController(viewControllerToCommit, animated: true, completion: nil)
+        embedAndPresentViewController(viewControllerToCommit)
     }
 }
