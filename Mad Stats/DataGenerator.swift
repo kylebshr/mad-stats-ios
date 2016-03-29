@@ -8,7 +8,12 @@
 
 import UIKit
 
-// Helper struct since we're not loading data from anywhere
+/* 
+ Helper struct since we're not loading data from anywhere
+
+ Please don't judge me based on this, I don't usually
+ have to hardcode a bunch of static data :P
+*/
 struct DataGenerator {
 
     /* 
@@ -48,55 +53,67 @@ struct DataGenerator {
     }
 
     private static let statTitles = [
-        "Team Name",
-        "Key Players",
-        "Points",
+        "Team",
+        "Points Offense",
+        "Points Defense",
         "Fouls",
-        "Possession Time"
+        "Free Throws Made",
+        "Field Goal Percent"
     ]
 
-    private static let keyPlayers = [
-        "Iowa State": "",
-        "Iona": "",
-        "Baylor": "",
-        "Yale": "",
-        "Indiana": "",
-        "Chattanooga": "",
-        "Gonzaga": "",
-        "Seton Hall": "",
+    private static let pointsOffense = [
+        "Iowa State": "2,862",
+        "Iona": "2,628",
+        "Baylor": "2,621",
+        "Yale": "2,248",
+        "Indiana": "2,891",
+        "Chattanooga": "2,652",
+        "Gonzaga": "2,840",
+        "Seton Hall": "2,522",
     ]
 
-    private static let points = [
-        "Iowa State": "",
-        "Iona": "",
-        "Baylor": "",
-        "Yale": "",
-        "Indiana": "",
-        "Chattanooga": "",
-        "Gonzaga": "",
-        "Seton Hall": "",
+    private static let pointsDefense = [
+        "Iowa State": "1,903",
+        "Iona": "2,628",
+        "Baylor": "2,140",
+        "Yale": "1,830",
+        "Indiana": "2,038",
+        "Chattanooga": "1,238",
+        "Gonzaga": "2,840",
+        "Seton Hall": "2,031",
     ]
 
     private static let fouls = [
-        "Iowa State": "",
-        "Iona": "",
-        "Baylor": "",
-        "Yale": "",
-        "Indiana": "",
-        "Chattanooga": "",
-        "Gonzaga": "",
-        "Seton Hall": "",
+        "Iowa State": "536",
+        "Iona": "420",
+        "Baylor": "529",
+        "Yale": "429",
+        "Indiana": "509",
+        "Chattanooga": "628",
+        "Gonzaga": "539",
+        "Seton Hall": "581",
     ]
 
-    private static let possessions = [
-        "Iowa State": "",
-        "Iona": "",
-        "Baylor": "",
-        "Yale": "",
-        "Indiana": "",
-        "Chattanooga": "",
-        "Gonzaga": "",
-        "Seton Hall": "",
+    private static let freeThrows = [
+        "Iowa State": "788",
+        "Iona": "931",
+        "Baylor": "830",
+        "Yale": "734",
+        "Indiana": "802",
+        "Chattanooga": "918",
+        "Gonzaga": "791",
+        "Seton Hall": "937",
+        ]
+
+    private static let goals = [
+        "Iowa State": "46.9%",
+        "Iona": "42.1%",
+        "Baylor": "40.8%",
+        "Yale": "49.3%",
+        "Indiana": "38.5%",
+        "Chattanooga": "43.4%",
+        "Gonzaga": "39.0%",
+        "Seton Hall": "43.2%",
     ]
 
     private static var names: [String: String] {
@@ -111,7 +128,7 @@ struct DataGenerator {
         return teams
     }
 
-    private static let stats = [names, keyPlayers, points, fouls, possessions]
+    private static let stats = [names,  pointsOffense, pointsDefense, fouls, freeThrows, goals]
 
     static var statCount: Int {
         return statTitles.count

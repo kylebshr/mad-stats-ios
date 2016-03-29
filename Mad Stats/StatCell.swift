@@ -14,6 +14,15 @@ class StatCell: UITableViewCell {
     @IBOutlet var firstTeamLabel: UILabel!
     @IBOutlet var secondTeamLabel: UILabel!
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+        let font = UIFont.monospacedDigitSystemFontOfSize(firstTeamLabel.font.pointSize, weight: UIFontWeightMedium)
+
+        firstTeamLabel.font = font
+        secondTeamLabel.font = font
+    }
+
     // Helper function to set up all the labels based on a game
     func setUpWithStatistic(stat: Statistic, forGame game: Game) {
 
