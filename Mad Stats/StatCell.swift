@@ -14,18 +14,10 @@ class StatCell: UITableViewCell {
     @IBOutlet var firstTeamLabel: UILabel!
     @IBOutlet var secondTeamLabel: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-
-        let font = UIFont.monospacedDigitSystemFontOfSize(firstTeamLabel.font.pointSize, weight: UIFontWeightMedium)
-
-        firstTeamLabel.font = font
-        secondTeamLabel.font = font
-    }
-
     // Helper function to set up all the labels based on a game
-    func setUpWithStatistic(stat: Statistic, forGame game: Game) {
+    func setUpWithStatistic(stat: Statistic, forGame game: Game, atIndex indexPath: NSIndexPath) {
 
+        // Set all the titles and team colors
         titleLabel.text = stat.title
 
         firstTeamLabel.text = stat.firstTeam
@@ -33,5 +25,8 @@ class StatCell: UITableViewCell {
 
         secondTeamLabel.text = stat.secondTeam
         secondTeamLabel.textColor = game.secondTeam.color
+
+        // Alternate color between white and grey
+        contentView.backgroundColor = indexPath.row % 2 == 0 ? .whiteColor() : .groupTableViewBackgroundColor()
     }
 }

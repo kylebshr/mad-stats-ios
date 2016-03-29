@@ -69,7 +69,6 @@ class GameTableViewController: UITableViewController {
 
     /* UITableViewDelegate and UITableViewDataSource methods */
 
-
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return games.count
     }
