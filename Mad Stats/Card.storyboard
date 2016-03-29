@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-56" y="500"/>
         </scene>
-        <!--Statistics-->
+        <!--Season Statistics-->
         <scene sceneID="4cP-qZ-uXK">
             <objects>
                 <tableViewController id="3Tj-e6-012" customClass="DataViewController" customModule="Mad_Stats" customModuleProvider="target" sceneMemberID="viewController">
@@ -121,7 +121,7 @@
                             <outlet property="delegate" destination="3Tj-e6-012" id="mYL-ep-h3J"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Statistics" id="4rR-8F-jX2">
+                    <navigationItem key="navigationItem" title="Season Statistics" id="4rR-8F-jX2">
                         <barButtonItem key="rightBarButtonItem" systemItem="stop" id="iYh-bj-oay">
                             <connections>
                                 <segue destination="8yy-y3-p6c" kind="unwind" unwindAction="unwindToGames:" id="GRI-Hq-LX0"/>
