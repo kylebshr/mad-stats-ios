@@ -17,9 +17,6 @@ xcuserdata/
 # Ignore Gemfile.lock
 Gemfile.lock
 
-# Ignore Podfile.lock
-Podfile.lock
-
 # Ignore R.swift generated files
 *.generated.swift
 
