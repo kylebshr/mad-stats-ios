@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		27179DC71CA9C88500ADC022 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27179DC61CA9C88500ADC022 /* R.generated.swift */; };
+		273844101CAA1C72006C8CAC /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8B81CA97F2C00F95B8D /* DataGenerator.swift */; };
+		273844111CAA1C72006C8CAC /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8B81CA97F2C00F95B8D /* DataGenerator.swift */; };
+		273844121CAA1CC9006C8CAC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8AE1CA97AE500F95B8D /* Game.swift */; };
+		273844131CAA1CC9006C8CAC /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8B01CA97AF600F95B8D /* Team.swift */; };
+		273844141CAA1CC9006C8CAC /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB34961CA9F43700F51B35 /* Statistic.swift */; };
+		273844151CAA1CCA006C8CAC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8AE1CA97AE500F95B8D /* Game.swift */; };
+		273844161CAA1CCA006C8CAC /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8B01CA97AF600F95B8D /* Team.swift */; };
+		273844171CAA1CCA006C8CAC /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB34961CA9F43700F51B35 /* Statistic.swift */; };
+		273844181CAA1CD7006C8CAC /* GameDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8B41CA97BDC00F95B8D /* GameDisplayable.swift */; };
+		273844191CAA1CD7006C8CAC /* GameDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8B41CA97BDC00F95B8D /* GameDisplayable.swift */; };
+		2738441A1CAA1CF7006C8CAC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8AA1CA9752000F95B8D /* UIColor+Extensions.swift */; };
+		2738441B1CAA1CF7006C8CAC /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8BA1CA9933300F95B8D /* NSDate+Extensions.swift */; };
+		2738441C1CAA1CF8006C8CAC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8AA1CA9752000F95B8D /* UIColor+Extensions.swift */; };
+		2738441D1CAA1CF8006C8CAC /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8BA1CA9933300F95B8D /* NSDate+Extensions.swift */; };
 		27DF81341CA9BBE400E043D4 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DF81331CA9BBE400E043D4 /* Card.storyboard */; };
 		27DF81361CA9BF0C00E043D4 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF81351CA9BF0C00E043D4 /* DataViewController.swift */; };
 		27EB34951CA9F39B00F51B35 /* StatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB34941CA9F39B00F51B35 /* StatCell.swift */; };
@@ -17,7 +31,6 @@
 		27F3E8821CA974BB00F95B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F3E8801CA974BB00F95B8D /* Main.storyboard */; };
 		27F3E8841CA974BB00F95B8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F3E8831CA974BB00F95B8D /* Assets.xcassets */; };
 		27F3E8871CA974BB00F95B8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F3E8851CA974BB00F95B8D /* LaunchScreen.storyboard */; };
-		27F3E8921CA974BB00F95B8D /* Mad_StatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8911CA974BB00F95B8D /* Mad_StatsTests.swift */; };
 		27F3E89D1CA974BB00F95B8D /* Mad_StatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E89C1CA974BB00F95B8D /* Mad_StatsUITests.swift */; };
 		27F3E8AB1CA9752000F95B8D /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8AA1CA9752000F95B8D /* UIColor+Extensions.swift */; };
 		27F3E8AD1CA9797500F95B8D /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3E8AC1CA9797500F95B8D /* GameCell.swift */; };
@@ -65,7 +78,6 @@
 		27F3E8861CA974BB00F95B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27F3E8881CA974BB00F95B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F3E88D1CA974BB00F95B8D /* Mad StatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mad StatsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		27F3E8911CA974BB00F95B8D /* Mad_StatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mad_StatsTests.swift; sourceTree = "<group>"; };
 		27F3E8931CA974BB00F95B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F3E8981CA974BB00F95B8D /* Mad StatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mad StatsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F3E89C1CA974BB00F95B8D /* Mad_StatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mad_StatsUITests.swift; sourceTree = "<group>"; };
@@ -219,7 +231,6 @@
 		27F3E8901CA974BB00F95B8D /* Mad StatsTests */ = {
 			isa = PBXGroup;
 			children = (
-				27F3E8911CA974BB00F95B8D /* Mad_StatsTests.swift */,
 				27F3E8931CA974BB00F95B8D /* Info.plist */,
 			);
 			path = "Mad StatsTests";
@@ -555,7 +566,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27F3E8921CA974BB00F95B8D /* Mad_StatsTests.swift in Sources */,
+				273844181CAA1CD7006C8CAC /* GameDisplayable.swift in Sources */,
+				273844131CAA1CC9006C8CAC /* Team.swift in Sources */,
+				273844121CAA1CC9006C8CAC /* Game.swift in Sources */,
+				2738441B1CAA1CF7006C8CAC /* NSDate+Extensions.swift in Sources */,
+				2738441A1CAA1CF7006C8CAC /* UIColor+Extensions.swift in Sources */,
+				273844141CAA1CC9006C8CAC /* Statistic.swift in Sources */,
+				273844111CAA1C72006C8CAC /* DataGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,7 +580,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273844191CAA1CD7006C8CAC /* GameDisplayable.swift in Sources */,
+				273844161CAA1CCA006C8CAC /* Team.swift in Sources */,
 				27F3E89D1CA974BB00F95B8D /* Mad_StatsUITests.swift in Sources */,
+				273844151CAA1CCA006C8CAC /* Game.swift in Sources */,
+				2738441D1CAA1CF8006C8CAC /* NSDate+Extensions.swift in Sources */,
+				2738441C1CAA1CF8006C8CAC /* UIColor+Extensions.swift in Sources */,
+				273844171CAA1CCA006C8CAC /* Statistic.swift in Sources */,
+				273844101CAA1C72006C8CAC /* DataGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

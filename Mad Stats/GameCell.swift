@@ -34,7 +34,7 @@ class GameCell: UITableViewCell {
     // Called by setHighlighted or setSelected to show hightlighting or selecting
     func highlight(highlighted: Bool, animated: Bool) {
 
-        // Put these in a block in case we have more at some point
+        // Put these in a block so we can animate them (or not)
         let animations = {
             self.contentView.backgroundColor = highlighted ? UIColor(hex: "#239ceb") : UIColor(hex: "#127CC1")
         }
