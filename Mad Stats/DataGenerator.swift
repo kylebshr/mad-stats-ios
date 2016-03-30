@@ -9,12 +9,15 @@
 import UIKit
 
 /* 
- Helper struct since we're not loading data from anywhere
+ Since we're not loading data from anywhere, had to 
+ make this. Trying out a no-case enum, since this 
+ should never be instantiated.
 
  Please don't judge me based on this, I don't usually
- have to hardcode a bunch of static data :P
+ have to hardcode a bunch of static data so there might
+ be a much better way to do this :P
 */
-struct DataGenerator {
+enum DataGenerator {
 
     /* 
  
@@ -74,12 +77,12 @@ struct DataGenerator {
 
     private static let pointsDefense = [
         "Iowa State": "1,903",
-        "Iona": "2,628",
-        "Baylor": "2,140",
+        "Iona": "2,053",
+        "Baylor": "1,824",
         "Yale": "1,830",
         "Indiana": "2,038",
         "Chattanooga": "1,238",
-        "Gonzaga": "2,840",
+        "Gonzaga": "2,140",
         "Seton Hall": "2,031",
     ]
 

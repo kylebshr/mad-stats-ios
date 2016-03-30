@@ -44,4 +44,9 @@ class Mad_StatsUITests: XCTestCase {
         // Make sure we're back to one table
         XCTAssertEqual(app.tables.count, 1)
     }
+
+    func testForceTouch() {
+
+
+    }
 }
